@@ -11,7 +11,6 @@ import { DataService } from './data.service';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { UserFormComponent } from './user-form/user-form.component';
-
 @NgModule({
   declarations: [
     AppComponent,

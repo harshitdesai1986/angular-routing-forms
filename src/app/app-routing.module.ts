@@ -16,6 +16,8 @@ const routes: Routes = [
       path: ':id', component: ProductDetailComponent, canDeactivate: [DeactivateGuardService]
     }]
   },
+  { path: 'admin', loadChildren: () => import(`./admin/admin.module`).then(m => m.AdminModule) },
+  { path: 'dashboard', loadChildren: () => import(`./dashboard/dashboard.module`).then(m => m.DashboardModule) },
   { path: '', redirectTo: '/userForm', pathMatch: 'full' },
   { path: '**', redirectTo: '/userForm', pathMatch: 'full' }
 ];
