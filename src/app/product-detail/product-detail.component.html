@@ -1,0 +1,10 @@
+<a [routerLink]="'/products'">
+    Go to Products List
+</a>
+<div>
+    <h1>
+        Product #{{product.id}}
+    </h1>
+    <p>{{ product.name }}</p>
+    <input type="text" [(ngModel)]="newText" />
+</div>
